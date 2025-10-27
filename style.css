@@ -1,0 +1,1016 @@
+/* ========================================
+   RESET OG GRUNNLEGGENDE STYLING
+   ======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ========================================
+   GOOGLE FONTS IMPORT - ELEGANTE SANS-SERIF
+   ======================================== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ========================================
+   SOFISTIKERT FUTURISTISK FARGEPALETT
+   ======================================== */
+:root {
+    /* Primære farger - sofistikert blå toner */
+    --primary-color: #00bcd4;        /* Cyan blå - elegant og moderne */
+    --primary-dark: #00838f;         /* Mørkere cyan for hover */
+    --primary-light: #4dd0e1;        /* Lys cyan for aksenter */
+    
+    /* Sekundære farger - nøytrale toner */
+    --accent-color: #64b5f6;         /* Lys blå for aksenter */
+    --accent-secondary: #90caf9;     /* Mykere blå for subtile elementer */
+    
+    /* Tekstfarger - optimal lesbarhet */
+    --text-primary: #ffffff;         /* Hvit for hovedtekst */
+    --text-secondary: #e3f2fd;       /* Lys blå-hvit for sekundær tekst */
+    --text-muted: #b0bec5;           /* Lysegrå for mindre viktig tekst */
+    --text-dark: #263238;            /* Mørk tekst for overlay */
+    
+    /* Bakgrunnsfarger - mørk futuristisk */
+    --bg-primary: #0d1117;           /* Mørk bakgrunn */
+    --bg-secondary: #161b22;         /* Sekundær bakgrunn */
+    --bg-overlay: rgba(13, 17, 23, 0.85); /* Semi-transparent overlay */
+    
+    /* Border og skygge */
+    --border-primary: rgba(0, 188, 212, 0.3); /* Subtile cyan borders */
+    --border-secondary: rgba(100, 181, 246, 0.2); /* Lysere borders */
+    --shadow-primary: 0 4px 20px rgba(0, 188, 212, 0.15); /* Subtile skygger */
+    --shadow-secondary: 0 8px 40px rgba(0, 188, 212, 0.25); /* Større skygger */
+    
+    /* Glassmorfisme */
+    --glass-bg: rgba(255, 255, 255, 0.05); /* Glassmorfisme bakgrunn */
+    --glass-border: rgba(255, 255, 255, 0.1); /* Glassmorfisme border */
+}
+
+/* ========================================
+   BODY OG BAKGRUNNSBILDE
+   ======================================== */
+body {
+    font-family: 'Roboto', 'Poppins', sans-serif; /* Elegant font stack */
+    line-height: 1.6;
+    color: var(--text-primary);
+    /* Realistisk futuristisk by-bakgrunnsbilde med sofistikert overlay */
+    background: 
+        linear-gradient(135deg, rgba(13, 17, 23, 0.9), rgba(22, 27, 34, 0.8)),
+        url('https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2125&q=80') 
+        no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed; /* Parallax effekt */
+    min-height: 100vh;
+    overflow-x: hidden; /* Forhindrer horisontal scroll */
+}
+
+/* ========================================
+   CONTAINER OG LAYOUT
+   ======================================== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem; /* Økt padding for bedre spacing */
+}
+
+/* ========================================
+   SOFISTIKERT HEADER OG NAVIGASJON
+   ======================================== */
+.header {
+    background: var(--bg-overlay); /* Semi-transparent mørk bakgrunn */
+    backdrop-filter: blur(20px); /* Glassmorfisme effekt */
+    border-bottom: 1px solid var(--border-primary); /* Subtile border */
+    box-shadow: var(--shadow-primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: all 0.3s ease; /* Smooth transitions */
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 1.5rem; /* Økt padding for bedre spacing */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo/Brand styling */
+.nav-brand h1 {
+    color: var(--primary-color);
+    font-size: 1.75rem; /* Økt størrelse for bedre visuell hierarki */
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif; /* Elegant font */
+    letter-spacing: -0.5px; /* Tighter letter spacing */
+    text-shadow: 0 0 20px rgba(0, 188, 212, 0.3); /* Subtile glow */
+    transition: all 0.3s ease;
+}
+
+.nav-brand h1:hover {
+    color: var(--primary-light);
+    text-shadow: 0 0 30px rgba(0, 188, 212, 0.5);
+}
+
+/* Navigasjonsmeny */
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem; /* Redusert gap for tettare layout */
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.95rem; /* Slightly smaller for elegance */
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Smooth cubic-bezier */
+    position: relative;
+    padding: 0.75rem 1.25rem; /* Økt padding for bedre klikk-område */
+    border-radius: 8px; /* Mindre radius for sofistikert look */
+    letter-spacing: 0.3px; /* Subtile letter spacing */
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+    background: var(--glass-bg); /* Glassmorfisme bakgrunn */
+    text-shadow: 0 0 8px rgba(0, 188, 212, 0.4);
+    transform: translateY(-1px); /* Subtile lift effekt */
+}
+
+/* Aktive link styling */
+.nav-link.active {
+    color: var(--primary-color);
+    background: var(--glass-bg);
+    border: 1px solid var(--border-primary);
+}
+
+/* Understrekning på hover */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Hamburger meny for mobil */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background: var(--text-color);
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+/* ========================================
+   SOFISTIKERT HERO-SEKSJON
+   ======================================== */
+.hero {
+    position: relative;
+    padding: 10rem 1.5rem 6rem; /* Økt padding for bedre spacing */
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Sofistikert overlay for optimal kontrast */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        135deg, 
+        rgba(13, 17, 23, 0.8) 0%, 
+        rgba(22, 27, 34, 0.6) 50%, 
+        rgba(13, 17, 23, 0.9) 100%
+    ); /* Gradient overlay for dybde */
+    z-index: 1;
+}
+
+/* Hero innhold container */
+.hero-content {
+    max-width: 700px; /* Økt bredde for bedre layout */
+    position: relative;
+    z-index: 2;
+    animation: fadeInUp 1s ease-out; /* Smooth entrance animation */
+}
+
+/* Hovedtittel - elegant og sofistikert */
+.hero-title {
+    font-size: 3.5rem; /* Økt størrelse for impact */
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -1px; /* Tighter spacing for elegance */
+    line-height: 1.1; /* Tighter line height */
+    text-shadow: 0 0 30px rgba(0, 188, 212, 0.3); /* Subtile glow */
+    background: linear-gradient(135deg, #ffffff 0%, #00bcd4 50%, #64b5f6 100%); /* Sofistikert gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: titleGlow 3s ease-in-out infinite alternate; /* Subtile glow animation */
+}
+
+/* Undertittel - profesjonell styling */
+.hero-subtitle {
+    font-size: 1.4rem; /* Økt størrelse */
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif; /* Elegant font */
+    text-shadow: 0 0 15px rgba(0, 188, 212, 0.4);
+    letter-spacing: 0.5px;
+}
+
+/* Beskrivelse - optimal lesbarhet */
+.hero-description {
+    font-size: 1.15rem; /* Økt størrelse for bedre lesbarhet */
+    color: var(--text-secondary);
+    margin-bottom: 2.5rem;
+    line-height: 1.8; /* Økt line height for bedre lesbarhet */
+    font-family: 'Roboto', sans-serif;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* CTA-knapp - sofistikert design */
+.cta-button {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    color: var(--text-primary);
+    border: 2px solid var(--border-primary);
+    padding: 1.2rem 2.5rem; /* Økt padding for bedre klikk-område */
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 12px; /* Mindre radius for sofistikert look */
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: var(--shadow-primary);
+    position: relative;
+    overflow: hidden;
+}
+
+/* CTA-knapp hover effekter */
+.cta-button:hover {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: var(--shadow-secondary);
+    border-color: var(--primary-light);
+}
+
+.cta-button:active {
+    transform: translateY(0) scale(0.98);
+}
+
+/* CTA-knapp ripple effekt */
+.cta-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.cta-button:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+/* ========================================
+   ANIMASJONER
+   ======================================== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes titleGlow {
+    from {
+        text-shadow: 0 0 30px rgba(0, 188, 212, 0.3);
+    }
+    to {
+        text-shadow: 0 0 40px rgba(0, 188, 212, 0.5);
+    }
+}
+
+/* ========================================
+   SEKSJONER OG TITLER
+   ======================================== */
+section {
+    padding: 6rem 0; /* Økt padding for bedre spacing */
+    position: relative;
+}
+
+/* Sofistikert seksjonstittel */
+.section-title {
+    text-align: center;
+    font-size: 2.75rem; /* Økt størrelse for bedre impact */
+    font-weight: 700;
+    margin-bottom: 4rem; /* Økt margin for bedre spacing */
+    color: var(--text-primary);
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.5px; /* Tighter spacing */
+    text-shadow: 0 0 25px rgba(0, 188, 212, 0.3); /* Subtile glow */
+    background: linear-gradient(135deg, #ffffff 0%, #00bcd4 50%, #64b5f6 100%); /* Sofistikert gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    animation: fadeInUp 0.8s ease-out; /* Entrance animation */
+}
+
+/* Elegant understrekning for seksjonstitler */
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px; /* Økt bredde */
+    height: 4px; /* Økt høyde */
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        var(--primary-color) 20%, 
+        var(--accent-color) 50%, 
+        var(--primary-color) 80%, 
+        transparent 100%
+    ); /* Gradient understrekning */
+    border-radius: 2px;
+    box-shadow: 0 0 15px rgba(0, 188, 212, 0.4); /* Subtile glow */
+    animation: underlineGlow 2s ease-in-out infinite alternate; /* Glow animation */
+}
+
+/* Understrekning glow animasjon */
+@keyframes underlineGlow {
+    from {
+        box-shadow: 0 0 15px rgba(0, 188, 212, 0.4);
+    }
+    to {
+        box-shadow: 0 0 25px rgba(0, 188, 212, 0.6);
+    }
+}
+
+/* ========================================
+   SOFISTIKERT OM MEG SEKSJON
+   ======================================== */
+.about {
+    background: var(--glass-bg); /* Glassmorfisme bakgrunn */
+    backdrop-filter: blur(20px); /* Glassmorfisme effekt */
+    border-top: 1px solid var(--border-primary);
+    border-bottom: 1px solid var(--border-primary);
+    position: relative;
+}
+
+/* Subtile pattern overlay */
+.about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 80%, rgba(0, 188, 212, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(100, 181, 246, 0.05) 0%, transparent 50%);
+    z-index: 1;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem; /* Økt gap for bedre spacing */
+    align-items: start;
+    position: relative;
+    z-index: 2;
+}
+
+/* Om meg tekst styling */
+.about-text p {
+    font-size: 1.15rem; /* Økt størrelse for bedre lesbarhet */
+    color: var(--text-secondary);
+    margin-bottom: 1.8rem; /* Økt margin */
+    line-height: 1.8; /* Økt line height */
+    font-family: 'Roboto', sans-serif;
+    text-align: justify; /* Justified text for profesjonell look */
+}
+
+/* Ferdigheter seksjon */
+.about-skills h3 {
+    font-size: 1.6rem; /* Økt størrelse */
+    margin-bottom: 1.5rem; /* Økt margin */
+    color: var(--text-primary);
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 0 0 15px rgba(0, 188, 212, 0.3); /* Subtile glow */
+    letter-spacing: -0.3px;
+}
+
+/* Ferdigheter grid */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem; /* Økt gap for bedre spacing */
+}
+
+/* Ferdigheter tags - sofistikert design */
+.skill-tag {
+    background: linear-gradient(135deg, 
+        rgba(0, 188, 212, 0.2) 0%, 
+        rgba(100, 181, 246, 0.2) 100%
+    ); /* Subtile gradient bakgrunn */
+    color: var(--primary-color);
+    padding: 0.6rem 1.2rem; /* Økt padding */
+    border-radius: 8px; /* Mindre radius for sofistikert look */
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid var(--border-primary);
+    box-shadow: var(--shadow-primary);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(10px); /* Glassmorfisme effekt */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover effekter for ferdigheter */
+.skill-tag:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: var(--shadow-secondary);
+    background: linear-gradient(135deg, 
+        rgba(0, 188, 212, 0.3) 0%, 
+        rgba(100, 181, 246, 0.3) 100%
+    );
+    border-color: var(--primary-light);
+}
+
+/* Ripple effekt for ferdigheter */
+.skill-tag::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.4s, height 0.4s;
+}
+
+.skill-tag:hover::before {
+    width: 100px;
+    height: 100px;
+}
+
+/* ========================================
+   SOFISTIKERT PROSJEKTER SEKSJON
+   ======================================== */
+.projects {
+    position: relative;
+    background: var(--glass-bg); /* Glassmorfisme bakgrunn */
+    backdrop-filter: blur(20px); /* Glassmorfisme effekt */
+    border-top: 1px solid var(--border-primary);
+    border-bottom: 1px solid var(--border-primary);
+}
+
+/* Sofistikert overlay for prosjekt seksjonen */
+.projects::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        135deg, 
+        rgba(13, 17, 23, 0.7) 0%, 
+        rgba(22, 27, 34, 0.5) 50%, 
+        rgba(13, 17, 23, 0.8) 100%
+    ); /* Gradient overlay for dybde */
+    z-index: 1;
+}
+
+/* Prosjekt grid - responsiv layout */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Økt min-width */
+    gap: 2.5rem; /* Økt gap for bedre spacing */
+    margin-top: 3rem; /* Økt margin */
+    position: relative;
+    z-index: 2;
+}
+
+/* Sofistikert prosjekt kort */
+.project-card {
+    background: var(--glass-bg); /* Glassmorfisme bakgrunn */
+    border: 1px solid var(--border-primary);
+    border-radius: 16px; /* Mindre radius for sofistikert look */
+    box-shadow: var(--shadow-primary);
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(10px); /* Glassmorfisme effekt */
+    position: relative;
+}
+
+/* Hover effekter for prosjekt kort */
+.project-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: var(--shadow-secondary);
+    border-color: var(--primary-light);
+}
+
+/* Prosjekt bilde seksjon */
+.project-image {
+    height: 220px; /* Økt høyde */
+    background: linear-gradient(135deg, 
+        rgba(0, 188, 212, 0.1) 0%, 
+        rgba(100, 181, 246, 0.1) 50%,
+        rgba(0, 188, 212, 0.05) 100%
+    ); /* Sofistikert gradient */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--border-secondary);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Prosjekt ikoner - sofistikert styling */
+.project-placeholder {
+    font-size: 4.5rem; /* Økt størrelse */
+    opacity: 0.9;
+    filter: drop-shadow(0 0 15px rgba(0, 188, 212, 0.4)); /* Subtile glow */
+    transition: all 0.3s ease;
+}
+
+.project-card:hover .project-placeholder {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 20px rgba(0, 188, 212, 0.6));
+}
+
+/* Prosjekt innhold */
+.project-content {
+    padding: 2rem; /* Økt padding */
+}
+
+/* Prosjekt tittel */
+.project-title {
+    font-size: 1.4rem; /* Økt størrelse */
+    font-weight: 600;
+    margin-bottom: 0.8rem; /* Økt margin */
+    color: var(--text-primary);
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 0 0 8px rgba(0, 188, 212, 0.2); /* Subtile glow */
+    letter-spacing: -0.3px;
+}
+
+/* Prosjekt beskrivelse */
+.project-description {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem; /* Økt margin */
+    line-height: 1.7; /* Økt line height */
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.95rem; /* Slightly smaller for elegance */
+}
+
+/* Teknologi tags */
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem; /* Økt gap */
+    margin-bottom: 1.5rem; /* Økt margin */
+}
+
+/* Teknologi tag styling */
+.tech-tag {
+    background: linear-gradient(135deg, 
+        rgba(0, 188, 212, 0.15) 0%, 
+        rgba(100, 181, 246, 0.15) 100%
+    ); /* Subtile gradient */
+    color: var(--primary-color);
+    padding: 0.4rem 0.9rem; /* Økt padding */
+    border-radius: 6px; /* Mindre radius */
+    font-size: 0.8rem;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid var(--border-secondary);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.tech-tag:hover {
+    background: linear-gradient(135deg, 
+        rgba(0, 188, 212, 0.25) 0%, 
+        rgba(100, 181, 246, 0.25) 100%
+    );
+    transform: translateY(-1px);
+    border-color: var(--primary-color);
+}
+
+/* Prosjekt lenke */
+.project-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.8px; /* Økt letter spacing */
+    font-size: 0.9rem;
+    position: relative;
+    display: inline-block;
+}
+
+.project-link:hover {
+    color: var(--accent-color);
+    text-shadow: 0 0 8px rgba(100, 181, 246, 0.6);
+    transform: translateX(5px); /* Subtile slide effekt */
+}
+
+/* Understrekning for prosjekt lenke */
+.project-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent-color);
+    transition: width 0.3s ease;
+}
+
+.project-link:hover::after {
+    width: 100%;
+}
+
+/* ========================================
+   SOFISTIKERT FOOTER
+   ======================================== */
+.footer {
+    background: linear-gradient(135deg, 
+        var(--bg-primary) 0%, 
+        var(--bg-secondary) 50%, 
+        var(--bg-primary) 100%
+    ); /* Sofistikert gradient bakgrunn */
+    color: var(--text-primary);
+    padding: 4rem 0 2rem; /* Økt padding */
+    border-top: 1px solid var(--border-primary);
+    position: relative;
+}
+
+/* Sofistikert pattern overlay på footer */
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(0, 188, 212, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(100, 181, 246, 0.08) 0%, transparent 50%);
+    z-index: 1;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem; /* Økt gap */
+    margin-bottom: 2.5rem; /* Økt margin */
+    position: relative;
+    z-index: 2;
+}
+
+/* Footer seksjon titler */
+.footer-section h3 {
+    font-size: 1.4rem; /* Økt størrelse */
+    margin-bottom: 1.5rem; /* Økt margin */
+    color: var(--text-primary);
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 0 0 15px rgba(0, 188, 212, 0.3); /* Subtile glow */
+    letter-spacing: -0.3px;
+}
+
+/* Kontakt informasjon */
+.contact-info p {
+    margin-bottom: 0.8rem; /* Økt margin */
+    color: var(--text-secondary);
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease;
+    font-size: 1rem; /* Økt størrelse */
+}
+
+.contact-info p:hover {
+    color: var(--primary-color);
+    text-shadow: 0 0 8px rgba(0, 188, 212, 0.5);
+    transform: translateX(5px); /* Subtile slide effekt */
+}
+
+/* Sosiale lenker */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem; /* Økt gap */
+}
+
+.social-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0.8rem 0; /* Økt padding */
+    border-radius: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px; /* Økt letter spacing */
+    font-size: 0.9rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-link:hover {
+    color: var(--primary-color);
+    text-shadow: 0 0 8px rgba(0, 188, 212, 0.6);
+    background: var(--glass-bg);
+    transform: translateX(10px); /* Slide effekt */
+    border: 1px solid var(--border-primary);
+}
+
+/* Ripple effekt for sosiale lenker */
+.social-link::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    transform: translateY(-50%);
+    transition: width 0.3s ease;
+}
+
+.social-link:hover::before {
+    width: 100%;
+}
+
+/* Footer bottom */
+.footer-bottom {
+    border-top: 1px solid var(--border-primary);
+    padding-top: 1.5rem; /* Økt padding */
+    text-align: center;
+    color: var(--text-muted);
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    z-index: 2;
+    font-size: 0.9rem;
+}
+
+/* ========================================
+   RESPONSIVT DESIGN - MOBILE FIRST
+   ======================================== */
+@media (max-width: 768px) {
+    /* Mobil navigasjon */
+    .hamburger {
+        display: flex;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 80px; /* Økt for bedre spacing */
+        flex-direction: column;
+        background: var(--bg-overlay);
+        backdrop-filter: blur(20px);
+        width: 100%;
+        text-align: center;
+        transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: var(--shadow-secondary);
+        padding: 2rem 0;
+        border-top: 1px solid var(--border-primary);
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    /* Hero justeringer for mobil */
+    .hero {
+        padding: 8rem 1rem 4rem; /* Økt padding */
+    }
+    
+    .hero-title {
+        font-size: 2.5rem; /* Økt størrelse */
+        line-height: 1.2;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem; /* Økt størrelse */
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+    }
+    
+    /* Om meg layout for mobil */
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2.5rem; /* Økt gap */
+    }
+    
+    /* Prosjekt grid for mobil */
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    /* Footer layout for mobil */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem; /* Økt gap */
+    }
+    
+    /* Generelle justeringer */
+    .section-title {
+        font-size: 2.2rem; /* Økt størrelse */
+    }
+    
+    .container {
+        padding: 0 1.25rem; /* Økt padding */
+    }
+    
+    /* Økt padding for seksjoner */
+    section {
+        padding: 4rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ekstra små skjermer */
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .nav {
+        padding: 1rem;
+    }
+    
+    .container {
+        padding: 0 1rem;
+    }
+    
+    /* Mindre padding for ekstra små skjermer */
+    section {
+        padding: 3rem 0;
+    }
+    
+    .hero {
+        padding: 7rem 1rem 3rem;
+    }
+}
+
+/* ========================================
+   SMOOTH SCROLLING OG TILGJENGELIGHET
+   ======================================== */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Fokus states for tilgjengelighet */
+.nav-link:focus,
+.cta-button:focus,
+.project-link:focus,
+.social-link:focus,
+.skill-tag:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* ========================================
+   ANIMASJONER OG EFFEKTER
+   ======================================== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Staggered animasjon for prosjekt kort */
+.project-card {
+    animation: fadeInUp 0.8s ease forwards;
+    opacity: 0;
+}
+
+.project-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.project-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.project-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+/* ========================================
+   UTILITY KLASSER
+   ======================================== */
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
+
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
+
+/* ========================================
+   PRINT STYLES
+   ======================================== */
+@media print {
+    * {
+        background: white !important;
+        color: black !important;
+        box-shadow: none !important;
+    }
+    
+    .header,
+    .footer {
+        display: none;
+    }
+    
+    .hero {
+        padding: 2rem 0;
+    }
+    
+    section {
+        padding: 1rem 0;
+    }
+}

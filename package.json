@@ -1,0 +1,41 @@
+{
+  "name": "min-personlige-nettside",
+  "version": "1.0.0",
+  "description": "En futuristisk personlig nettside med moderne design og glassmorfisme-effekter",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx live-server --port=3000 --open=/index.html",
+    "build": "echo 'Static site - no build process needed'",
+    "deploy": "echo 'Deploy to Vercel or your preferred hosting service'"
+  },
+  "keywords": [
+    "personal-website",
+    "futuristic-design",
+    "responsive",
+    "html",
+    "css",
+    "javascript",
+    "glassmorphism",
+    "neon-effects"
+  ],
+  "author": "Ditt Navn",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/min-personlige-nettside.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/min-personlige-nettside/issues"
+  },
+  "homepage": "https://yourusername.github.io/min-personlige-nettside",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "serve": "^14.2.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min Personlige Nettside</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header med navigasjon -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1>Min Side</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#hjem" class="nav-link">Hjem</a></li>
+                <li><a href="#om-meg" class="nav-link">Om meg</a></li>
+                <li><a href="#prosjekter" class="nav-link">Prosjekter</a></li>
+                <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
+            </ul>
+            <!-- Mobil meny toggle -->
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero-seksjon med velkomsttekst -->
+    <section id="hjem" class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">Hei, jeg er [Ditt Navn]</h2>
+            <p class="hero-subtitle">Utvikler, designer og kreativ problemløser</p>
+            <p class="hero-description">
+                Velkommen til min personlige nettside! Her kan du utforske mine prosjekter, 
+                lære mer om meg og komme i kontakt.
+            </p>
+            <button class="cta-button">Se mine prosjekter</button>
+        </div>
+    </section>
+
+    <!-- Om meg seksjon -->
+    <section id="om-meg" class="about">
+        <div class="container">
+            <h2 class="section-title">Om meg</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Jeg er en lidenskapelig utvikler som elsker å skape digitale opplevelser. 
+                        Med bakgrunn innen webutvikling og design, jobber jeg med alt fra 
+                        frontend-utvikling til brukeropplevelse.
+                    </p>
+                    <p>
+                        Når jeg ikke koder, kan du finne meg på fjellet, i kjøkkenet eller 
+                        med nesen i en god bok.
+                    </p>
+                </div>
+                <div class="about-skills">
+                    <h3>Ferdigheter</h3>
+                    <div class="skills-grid">
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Design</span>
+                        <span class="skill-tag">UX/UI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prosjekter seksjon -->
+    <section id="prosjekter" class="projects">
+        <div class="container">
+            <h2 class="section-title">Mine prosjekter</h2>
+            <div class="projects-grid">
+                <!-- Prosjekt kort 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">📱</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Mobil App</h3>
+                        <p class="project-description">
+                            En moderne mobilapplikasjon utviklet med React Native. 
+                            Fokuserer på brukeropplevelse og ytelse.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <a href="#" class="project-link">Se prosjektet →</a>
+                    </div>
+                </div>
+
+                <!-- Prosjekt kort 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">🌐</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Web App</h3>
+                        <p class="project-description">
+                            En responsiv webapplikasjon med moderne design og 
+                            optimalisert for alle enheter.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <a href="#" class="project-link">Se prosjektet →</a>
+                    </div>
+                </div>
+
+                <!-- Prosjekt kort 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">🎨</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Design System</h3>
+                        <p class="project-description">
+                            Et omfattende designsystem med komponenter og 
+                            retningslinjer for konsistent brukeropplevelse.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Figma</span>
+                            <span class="tech-tag">Design</span>
+                        </div>
+                        <a href="#" class="project-link">Se prosjektet →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer med kontaktinfo -->
+    <footer id="kontakt" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Kontakt meg</h3>
+                    <p>Har du et spørsmål eller vil du samarbeide?</p>
+                    <div class="contact-info">
+                        <p>📧 din@epost.no</p>
+                        <p>📱 +47 123 45 678</p>
+                        <p>📍 Oslo, Norge</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Følg meg</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Min Personlige Nettside. Alle rettigheter forbeholdt.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
