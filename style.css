@@ -13,51 +13,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 /* ========================================
-   SOFISTIKERT FUTURISTISK FARGEPALETT
+   ELEGANT OG BALANSERT FARGEPALETT
    ======================================== */
 :root {
-    /* Primære farger - sofistikert blå toner */
-    --primary-color: #00bcd4;        /* Cyan blå - elegant og moderne */
-    --primary-dark: #00838f;         /* Mørkere cyan for hover */
-    --primary-light: #4dd0e1;        /* Lys cyan for aksenter */
+    /* Primære farger - elegante og enkle toner */
+    --primary-color: #3b82f6;        /* Moderne blå - ren og profesjonell */
+    --primary-dark: #2563eb;         /* Mørkere blå for hover */
+    --primary-light: #60a5fa;        /* Lys blå for aksenter */
     
-    /* Sekundære farger - nøytrale toner */
-    --accent-color: #64b5f6;         /* Lys blå for aksenter */
-    --accent-secondary: #90caf9;     /* Mykere blå for subtile elementer */
+    /* Sekundære farger - nøytrale og elegante */
+    --accent-color: #6366f1;         /* Indigo for aksenter */
+    --accent-secondary: #8b5cf6;     /* Lilla for subtile elementer */
     
-    /* Tekstfarger - optimal lesbarhet */
+    /* Tekstfarger - optimal lesbarhet og eleganse */
     --text-primary: #ffffff;         /* Hvit for hovedtekst */
-    --text-secondary: #e3f2fd;       /* Lys blå-hvit for sekundær tekst */
-    --text-muted: #b0bec5;           /* Lysegrå for mindre viktig tekst */
-    --text-dark: #263238;            /* Mørk tekst for overlay */
+    --text-secondary: #f1f5f9;       /* Lys grå-hvit for sekundær tekst */
+    --text-muted: #cbd5e1;           /* Lysegrå for mindre viktig tekst */
+    --text-dark: #1e293b;            /* Mørk tekst for overlay */
     
-    /* Bakgrunnsfarger - mørk futuristisk */
-    --bg-primary: #0d1117;           /* Mørk bakgrunn */
-    --bg-secondary: #161b22;         /* Sekundær bakgrunn */
-    --bg-overlay: rgba(13, 17, 23, 0.85); /* Semi-transparent overlay */
+    /* Bakgrunnsfarger - balansert mørk */
+    --bg-primary: #0f172a;           /* Mørk bakgrunn */
+    --bg-secondary: #1e293b;         /* Sekundær bakgrunn */
+    --bg-overlay: rgba(15, 23, 42, 0.8); /* Semi-transparent overlay */
     
-    /* Border og skygge */
-    --border-primary: rgba(0, 188, 212, 0.3); /* Subtile cyan borders */
-    --border-secondary: rgba(100, 181, 246, 0.2); /* Lysere borders */
-    --shadow-primary: 0 4px 20px rgba(0, 188, 212, 0.15); /* Subtile skygger */
-    --shadow-secondary: 0 8px 40px rgba(0, 188, 212, 0.25); /* Større skygger */
+    /* Border og skygge - subtile og elegante */
+    --border-primary: rgba(59, 130, 246, 0.2); /* Subtile blå borders */
+    --border-secondary: rgba(99, 102, 241, 0.15); /* Lysere borders */
+    --shadow-primary: 0 4px 20px rgba(59, 130, 246, 0.1); /* Subtile skygger */
+    --shadow-secondary: 0 8px 40px rgba(59, 130, 246, 0.15); /* Større skygger */
     
-    /* Glassmorfisme */
-    --glass-bg: rgba(255, 255, 255, 0.05); /* Glassmorfisme bakgrunn */
-    --glass-border: rgba(255, 255, 255, 0.1); /* Glassmorfisme border */
+    /* Glassmorfisme - subtile og elegante */
+    --glass-bg: rgba(255, 255, 255, 0.08); /* Glassmorfisme bakgrunn */
+    --glass-border: rgba(255, 255, 255, 0.12); /* Glassmorfisme border */
 }
 
 /* ========================================
-   BODY OG BAKGRUNNSBILDE
+   BODY OG BAKGRUNNSBILDE - BALANSERT DESIGN
    ======================================== */
 body {
-    font-family: 'Roboto', 'Poppins', sans-serif; /* Elegant font stack */
+    font-family: 'Roboto', 'Poppins', sans-serif; /* Moderne font stack */
     line-height: 1.6;
     color: var(--text-primary);
-    /* Realistisk futuristisk by-bakgrunnsbilde med sofistikert overlay */
+    /* Subtilt moderne by-bakgrunnsbilde med lav opasitet for optimal lesbarhet */
     background: 
-        linear-gradient(135deg, rgba(13, 17, 23, 0.9), rgba(22, 27, 34, 0.8)),
-        url('https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2125&q=80') 
+        linear-gradient(135deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.6)),
+        url('https://images.unsplash.com/photo-1519501025264-65ba15a82390?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') 
         no-repeat center center fixed;
     background-size: cover;
     background-attachment: fixed; /* Parallax effekt */

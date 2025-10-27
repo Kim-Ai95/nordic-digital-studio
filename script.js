@@ -1,3 +1,9 @@
+// ========================================
+// PERSONLIG NETTSIDE - KIM ANDRE IVERSEN
+// ========================================
+// Moderne JavaScript funksjonalitet for balansert og elegant design
+// Oppdatert med personlig informasjon og forbedret brukeropplevelse
+
 // Vent til DOM er lastet før vi kjører koden
 document.addEventListener('DOMContentLoaded', function() {
     
@@ -172,8 +178,9 @@ document.addEventListener('DOMContentLoaded', function() {
     images.forEach(img => imageObserver.observe(img));
     
     // Konsoll melding for utviklere
-    console.log('🚀 Min Personlige Nettside er lastet!');
-    console.log('💡 Tips: Endre innholdet i HTML-filen for å tilpasse nettsiden din');
+    console.log('🚀 Kim Andre Iversen - Personlig Nettside er lastet!');
+    console.log('💡 Tips: Nettsiden er oppdatert med balansert design og personlig informasjon');
+    console.log('📍 Lokasjon: Ås, Norge | 👫 Partner: Yuris Castro');
     
 });
 

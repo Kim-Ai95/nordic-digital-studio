@@ -1,15 +1,15 @@
-# 🌆 Min Personlige Nettside - Sofistikert Futuristisk Design
+# 🌆 Kim Andre Iversen - Personlig Nettside
 
-En moderne, responsiv personlig nettside med sofistikert futuristisk design, glassmorfisme-effekter og realistisk by-bakgrunn.
+En moderne, responsiv personlig nettside med balansert og elegant design, glassmorfisme-effekter og subtilt by-bakgrunn. Nettsiden presenterer Kim Andre Iversen, en webutvikler og teknologientusiast fra Ås, Norge.
 
 ## ✨ Design Features
 
-### 🎨 Sofistikert Futuristisk Tema
-- **Realistisk By-Bakgrunn**: Høyoppløselig futuristisk by-bakgrunnsbilde med sofistikert overlay
-- **Elegante Farger**: Cyan blå (#00bcd4) og lys blå (#64b5f6) aksenter for profesjonell look
+### 🎨 Balansert og Elegant Design
+- **Subtilt By-Bakgrunn**: Moderne by-bakgrunnsbilde med lav opasitet for optimal lesbarhet
+- **Elegante Farger**: Moderne blå (#3b82f6) og indigo (#6366f1) toner for profesjonell look
 - **Glassmorfisme**: Semi-transparente overlays med blur-effekter for moderne estetikk
-- **Gradient Tekst**: Sofistikert gradient farger på titler og viktige elementer
-- **Subtile Neon Effekter**: Diskrete glow-effekter som ikke overvelder designet
+- **Gradient Tekst**: Elegant gradient farger på titler og viktige elementer
+- **Subtile Effekter**: Diskrete hover-effekter som forbedrer brukeropplevelsen
 
 ### 🔤 Elegant Typografi
 - **Primær Font**: Roboto (Google Fonts) - ren og lesbar sans-serif
@@ -47,10 +47,10 @@ My-Website/
 - **Touch Friendly**: Optimalisert for touch-interaksjoner
 
 ### 🎨 Seksjoner
-1. **Hero**: Velkomstseksjon med sofistikert gradient tekst og CTA-knapp
-2. **Om meg**: Personlig informasjon med elegante ferdighets-tags
+1. **Hero**: Velkomstseksjon med Kim Andre Iversen og personlig beskrivelse
+2. **Om meg**: Personlig informasjon om Kim, hans partner Yuris Castro og interesser
 3. **Prosjekter**: 3 prosjekt-kort med glassmorfisme og hover-effekter
-4. **Kontakt**: Footer med kontaktinformasjon og sosiale lenker
+4. **Kontakt**: Footer med kontaktinformasjon fra Ås, Norge
 
 ### ⚡ JavaScript Funksjonalitet
 - Mobil meny toggle med smooth animasjoner
@@ -72,28 +72,28 @@ My-Website/
 - **Vanilla JavaScript**: Ingen eksterne biblioteker for optimal ytelse
 - **Google Fonts**: Roboto, Montserrat & Poppins for elegant typografi
 
-## 🎨 Sofistikert Fargepalett
+## 🎨 Elegant og Balansert Fargepalett
 
 ```css
 :root {
-    /* Primære farger - sofistikert blå toner */
-    --primary-color: #00bcd4;        /* Cyan blå - elegant og moderne */
-    --primary-dark: #00838f;         /* Mørkere cyan for hover */
-    --primary-light: #4dd0e1;        /* Lys cyan for aksenter */
+    /* Primære farger - elegante og enkle toner */
+    --primary-color: #3b82f6;        /* Moderne blå - ren og profesjonell */
+    --primary-dark: #2563eb;         /* Mørkere blå for hover */
+    --primary-light: #60a5fa;        /* Lys blå for aksenter */
     
-    /* Sekundære farger - nøytrale toner */
-    --accent-color: #64b5f6;         /* Lys blå for aksenter */
-    --accent-secondary: #90caf9;     /* Mykere blå for subtile elementer */
+    /* Sekundære farger - nøytrale og elegante */
+    --accent-color: #6366f1;         /* Indigo for aksenter */
+    --accent-secondary: #8b5cf6;     /* Lilla for subtile elementer */
     
-    /* Tekstfarger - optimal lesbarhet */
+    /* Tekstfarger - optimal lesbarhet og eleganse */
     --text-primary: #ffffff;         /* Hvit for hovedtekst */
-    --text-secondary: #e3f2fd;       /* Lys blå-hvit for sekundær tekst */
-    --text-muted: #b0bec5;           /* Lysegrå for mindre viktig tekst */
+    --text-secondary: #f1f5f9;       /* Lys grå-hvit for sekundær tekst */
+    --text-muted: #cbd5e1;           /* Lysegrå for mindre viktig tekst */
     
-    /* Bakgrunnsfarger - mørk futuristisk */
-    --bg-primary: #0d1117;           /* Mørk bakgrunn */
-    --bg-secondary: #161b22;         /* Sekundær bakgrunn */
-    --bg-overlay: rgba(13, 17, 23, 0.85); /* Semi-transparent overlay */
+    /* Bakgrunnsfarger - balansert mørk */
+    --bg-primary: #0f172a;           /* Mørk bakgrunn */
+    --bg-secondary: #1e293b;         /* Sekundær bakgrunn */
+    --bg-overlay: rgba(15, 23, 42, 0.8); /* Semi-transparent overlay */
 }
 ```
 
@@ -192,10 +192,12 @@ Bidrag er velkommen! Vennligst:
 
 ## 📞 Kontakt
 
-- **E-post**: din@epost.no
+- **Navn**: Kim Andre Iversen
+- **E-post**: kim.andre.iversen@example.com
 - **Telefon**: +47 123 45 678
-- **Lokasjon**: Oslo, Norge
-- **GitHub**: [@yourusername](https://github.com/yourusername)
+- **Lokasjon**: Ås, Norge
+- **Partner**: Yuris Castro
+- **GitHub**: [@kimandreiversen](https://github.com/kimandreiversen)
 
 ## 🙏 Takk
 
@@ -206,4 +208,4 @@ Takk til:
 
 ---
 
-**Laget med ❤️ og sofistikert futuristisk design** 🌆✨
+**Laget med ❤️ av Kim Andre Iversen - Balansert og elegant design** 🌆✨
