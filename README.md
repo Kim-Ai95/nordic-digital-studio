@@ -1,15 +1,15 @@
-# 🌆 Kim Andre Iversen - Personlig Nettside
+# 🌆 NordicDigital Studio - Profesjonell Webutvikling
 
-En moderne, responsiv personlig nettside med balansert og elegant design, glassmorfisme-effekter og subtilt by-bakgrunn. Nettsiden presenterer Kim Andre Iversen, en webutvikler og teknologientusiast fra Ås, Norge.
+En moderne, responsiv bedriftsnettside for NordicDigital Studio med profesjonelt design og fokus på kundeopplevelse. Nettsiden presenterer våre tjenester innen webutvikling, design og teknisk support for nordiske bedrifter.
 
 ## ✨ Design Features
 
-### 🎨 Balansert og Elegant Design
-- **Subtilt By-Bakgrunn**: Moderne by-bakgrunnsbilde med lav opasitet for optimal lesbarhet
-- **Elegante Farger**: Moderne blå (#3b82f6) og indigo (#6366f1) toner for profesjonell look
-- **Glassmorfisme**: Semi-transparente overlays med blur-effekter for moderne estetikk
-- **Gradient Tekst**: Elegant gradient farger på titler og viktige elementer
-- **Subtile Effekter**: Diskrete hover-effekter som forbedrer brukeropplevelsen
+### 🎨 Profesjonelt Design
+- **Ren Hvit Bakgrunn**: Minimalistisk design med subtile gradient-overlays
+- **Profesjonelle Farger**: Hvit, svart, mørkegrå med blå aksentfarger
+- **Glassmorfisme**: Subtile overlays for moderne estetikk
+- **Klar Typografi**: Optimal lesbarhet med profesjonelle fonter
+- **Subtile Hover-effekter**: Diskrete interaksjoner som forbedrer brukeropplevelsen
 
 ### 🔤 Elegant Typografi
 - **Primær Font**: Roboto (Google Fonts) - ren og lesbar sans-serif
@@ -47,10 +47,10 @@ My-Website/
 - **Touch Friendly**: Optimalisert for touch-interaksjoner
 
 ### 🎨 Seksjoner
-1. **Hero**: Velkomstseksjon med Kim Andre Iversen og personlig beskrivelse
-2. **Om meg**: Personlig informasjon om Kim, hans partner Yuris Castro og interesser
-3. **Prosjekter**: 3 prosjekt-kort med glassmorfisme og hover-effekter
-4. **Kontakt**: Footer med kontaktinformasjon fra Ås, Norge
+1. **Hero**: Velkomstseksjon med NordicDigital Studio og tjenestebeskrivelse
+2. **Om oss**: Bedriftsinformasjon og tjenester vi tilbyr
+3. **Tjenester**: 3 tjenestekort med webutvikling, design og teknisk support
+4. **Kontakt**: Footer med kontaktinformasjon og GitHub-lenke
 
 ### ⚡ JavaScript Funksjonalitet
 - Mobil meny toggle med smooth animasjoner
@@ -72,28 +72,26 @@ My-Website/
 - **Vanilla JavaScript**: Ingen eksterne biblioteker for optimal ytelse
 - **Google Fonts**: Roboto, Montserrat & Poppins for elegant typografi
 
-## 🎨 Elegant og Balansert Fargepalett
+## 🎨 Profesjonell Fargepalett
 
 ```css
 :root {
-    /* Primære farger - elegante og enkle toner */
-    --primary-color: #3b82f6;        /* Moderne blå - ren og profesjonell */
-    --primary-dark: #2563eb;         /* Mørkere blå for hover */
-    --primary-light: #60a5fa;        /* Lys blå for aksenter */
+    /* Primære farger - profesjonelle toner */
+    --primary-color: #2563eb;        /* Profesjonell blå - hovedakse */
+    --primary-dark: #1d4ed8;         /* Mørkere blå for hover */
+    --primary-light: #3b82f6;        /* Lys blå for aksenter */
     
-    /* Sekundære farger - nøytrale og elegante */
-    --accent-color: #6366f1;         /* Indigo for aksenter */
-    --accent-secondary: #8b5cf6;     /* Lilla for subtile elementer */
+    /* Nøytrale farger - hvit, svart, grå */
+    --text-primary: #1f2937;         /* Mørk grå for hovedtekst */
+    --text-secondary: #4b5563;       /* Medium grå for sekundær tekst */
+    --text-muted: #6b7280;           /* Lysegrå for mindre viktig tekst */
+    --text-light: #ffffff;           /* Hvit tekst på mørk bakgrunn */
     
-    /* Tekstfarger - optimal lesbarhet og eleganse */
-    --text-primary: #ffffff;         /* Hvit for hovedtekst */
-    --text-secondary: #f1f5f9;       /* Lys grå-hvit for sekundær tekst */
-    --text-muted: #cbd5e1;           /* Lysegrå for mindre viktig tekst */
-    
-    /* Bakgrunnsfarger - balansert mørk */
-    --bg-primary: #0f172a;           /* Mørk bakgrunn */
-    --bg-secondary: #1e293b;         /* Sekundær bakgrunn */
-    --bg-overlay: rgba(15, 23, 42, 0.8); /* Semi-transparent overlay */
+    /* Bakgrunnsfarger - profesjonelle toner */
+    --bg-primary: #ffffff;           /* Hvit hovedbakgrunn */
+    --bg-secondary: #f9fafb;         /* Lys grå sekundær bakgrunn */
+    --bg-dark: #1f2937;              /* Mørk grå for kontrast */
+    --bg-overlay: rgba(0, 0, 0, 0.05); /* Subtile overlay */
 }
 ```
 
@@ -192,12 +190,12 @@ Bidrag er velkommen! Vennligst:
 
 ## 📞 Kontakt
 
-- **Navn**: Kim Andre Iversen
-- **E-post**: kim.andre.iversen@example.com
+- **Bedrift**: NordicDigital Studio
+- **E-post**: Kimatcode@gmail.com
 - **Telefon**: +47 123 45 678
 - **Lokasjon**: Ås, Norge
-- **Partner**: Yuris Castro
-- **GitHub**: [@kimandreiversen](https://github.com/kimandreiversen)
+- **Utvikler**: Kim Andre Iversen
+- **GitHub**: [@Kim-Ai95](https://github.com/Kim-Ai95)
 
 ## 🙏 Takk
 
@@ -208,4 +206,4 @@ Takk til:
 
 ---
 
-**Laget med ❤️ av Kim Andre Iversen - Balansert og elegant design** 🌆✨
+**Laget med ❤️ av NordicDigital Studio - Profesjonell webutvikling** 🌆✨

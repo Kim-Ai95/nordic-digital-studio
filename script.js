@@ -1,8 +1,8 @@
 // ========================================
-// PERSONLIG NETTSIDE - KIM ANDRE IVERSEN
+// NORDICDIGITAL STUDIO - PROFESJONELL WEBSIDE
 // ========================================
-// Moderne JavaScript funksjonalitet for balansert og elegant design
-// Oppdatert med personlig informasjon og forbedret brukeropplevelse
+// Moderne JavaScript funksjonalitet for profesjonell bedriftsnettside
+// Oppdatert for NordicDigital Studio med fokus på kundeopplevelse
 
 // Vent til DOM er lastet før vi kjører koden
 document.addEventListener('DOMContentLoaded', function() {
@@ -178,9 +178,9 @@ document.addEventListener('DOMContentLoaded', function() {
     images.forEach(img => imageObserver.observe(img));
     
     // Konsoll melding for utviklere
-    console.log('🚀 Kim Andre Iversen - Personlig Nettside er lastet!');
-    console.log('💡 Tips: Nettsiden er oppdatert med balansert design og personlig informasjon');
-    console.log('📍 Lokasjon: Ås, Norge | 👫 Partner: Yuris Castro');
+    console.log('🚀 NordicDigital Studio - Profesjonell Webside er lastet!');
+    console.log('💡 Tips: Websiden er oppdatert med profesjonelt design og bedriftsfokus');
+    console.log('📍 Lokasjon: Ås, Norge | 👨‍💻 Kim Andre Iversen | 📧 Kimatcode@gmail.com');
     
 });
 
