@@ -1,7 +1,7 @@
 {
-  "name": "min-personlige-nettside",
+  "name": "nordic-digital-studio",
   "version": "1.0.0",
-  "description": "En futuristisk personlig nettside med moderne design og glassmorfisme-effekter",
+  "description": "Profesjonell webutvikling for nordiske bedrifter - moderne nettsider, design og teknologi",
   "main": "index.html",
   "scripts": {
     "start": "npx serve .",
@@ -10,25 +10,26 @@
     "deploy": "echo 'Deploy to Vercel or your preferred hosting service'"
   },
   "keywords": [
-    "personal-website",
-    "futuristic-design",
-    "responsive",
+    "web-development",
+    "nordic-business",
+    "responsive-design",
     "html",
     "css",
     "javascript",
     "glassmorphism",
-    "neon-effects"
+    "modern-design",
+    "professional-website"
   ],
-  "author": "Ditt Navn",
+  "author": "Kim Andre Iversen",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/min-personlige-nettside.git"
+    "url": "https://github.com/Kim-Ai95/nordic-digital-studio.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/min-personlige-nettside/issues"
+    "url": "https://github.com/Kim-Ai95/nordic-digital-studio/issues"
   },
-  "homepage": "https://yourusername.github.io/min-personlige-nettside",
+  "homepage": "https://nordic-digital-studio.vercel.app",
   "devDependencies": {
     "live-server": "^1.2.2",
     "serve": "^14.2.1"

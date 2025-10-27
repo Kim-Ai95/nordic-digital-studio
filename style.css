@@ -13,51 +13,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 /* ========================================
-   PROFESJONELL FARGEPALETT - NORDICDIGITAL STUDIO
+   VISUELLT INTERESSANT FARGEPALETT - NORDICDIGITAL STUDIO
    ======================================== */
 :root {
-    /* Primære farger - profesjonelle toner */
-    --primary-color: #2563eb;        /* Profesjonell blå - hovedakse */
-    --primary-dark: #1d4ed8;         /* Mørkere blå for hover */
-    --primary-light: #3b82f6;        /* Lys blå for aksenter */
+    /* Primære farger - moderne aksentfarger */
+    --primary-color: #ff6b35;        /* Oransje aksentfarge - energisk og profesjonell */
+    --primary-dark: #e55a2b;         /* Mørkere oransje for hover */
+    --primary-light: #ff8c5a;        /* Lys oransje for aksenter */
+    --accent-color: #2563eb;         /* Dyp blå som sekundær aksent */
+    --accent-dark: #1d4ed8;          /* Mørkere blå */
     
-    /* Nøytrale farger - hvit, svart, grå */
-    --text-primary: #1f2937;         /* Mørk grå for hovedtekst */
-    --text-secondary: #4b5563;       /* Medium grå for sekundær tekst */
-    --text-muted: #6b7280;           /* Lysegrå for mindre viktig tekst */
-    --text-light: #ffffff;           /* Hvit tekst på mørk bakgrunn */
+    /* Tekstfarger - tilpasset mørk bakgrunn */
+    --text-primary: #ffffff;         /* Hvit hovedtekst for kontrast */
+    --text-secondary: #e5e7eb;       /* Lys grå for sekundær tekst */
+    --text-muted: #9ca3af;           /* Medium grå for mindre viktig tekst */
+    --text-dark: #1f2937;            /* Mørk tekst for lyse bakgrunner */
+    --text-light: #ffffff;           /* Hvit tekst */
     
-    /* Bakgrunnsfarger - profesjonelle toner */
-    --bg-primary: #ffffff;           /* Hvit hovedbakgrunn */
-    --bg-secondary: #f9fafb;         /* Lys grå sekundær bakgrunn */
-    --bg-dark: #1f2937;              /* Mørk grå for kontrast */
-    --bg-overlay: rgba(0, 0, 0, 0.05); /* Subtile overlay */
+    /* Bakgrunnsfarger - mørk og sofistikert */
+    --bg-primary: #0f172a;           /* Mørk marine blå hovedbakgrunn */
+    --bg-secondary: #1e293b;         /* Mørk grå sekundær bakgrunn */
+    --bg-dark: #0a0f1a;              /* Svart marine for kontrast */
+    --bg-overlay: rgba(0, 0, 0, 0.7); /* Mørk overlay for tekstkontrast */
     
-    /* Border og skygge - subtile og profesjonelle */
-    --border-primary: #e5e7eb;       /* Lys grå borders */
-    --border-secondary: #d1d5db;     /* Medium grå borders */
-    --shadow-primary: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtile skygger */
-    --shadow-secondary: 0 4px 6px rgba(0, 0, 0, 0.1); /* Medium skygger */
-    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1); /* Store skygger */
+    /* Border og skygge - tilpasset mørk tema */
+    --border-primary: rgba(255, 255, 255, 0.1); /* Subtile hvite borders */
+    --border-secondary: rgba(255, 255, 255, 0.2); /* Medium hvite borders */
+    --shadow-primary: 0 4px 6px rgba(0, 0, 0, 0.3); /* Mørke skygger */
+    --shadow-secondary: 0 8px 15px rgba(0, 0, 0, 0.4); /* Medium mørke skygger */
+    --shadow-lg: 0 20px 25px rgba(0, 0, 0, 0.5); /* Store mørke skygger */
     
-    /* Glassmorfisme - subtile og profesjonelle */
-    --glass-bg: rgba(255, 255, 255, 0.8); /* Glassmorfisme bakgrunn */
+    /* Glassmorfisme - tilpasset mørk bakgrunn */
+    --glass-bg: rgba(255, 255, 255, 0.1); /* Glassmorfisme bakgrunn */
     --glass-border: rgba(255, 255, 255, 0.2); /* Glassmorfisme border */
 }
 
 /* ========================================
-   BODY OG BAKGRUNNSBILDE - PROFESJONELL DESIGN
+   BODY OG VISUELLT INTERESSANT BAKGRUNN
    ======================================== */
 body {
     font-family: 'Montserrat', 'Roboto', sans-serif; /* Profesjonell font stack */
     line-height: 1.6;
     color: var(--text-primary);
-    background: var(--bg-primary); /* Ren hvit bakgrunn */
+    background: var(--bg-primary); /* Mørk marine blå bakgrunn */
     min-height: 100vh;
     overflow-x: hidden; /* Forhindrer horisontal scroll */
+    position: relative;
 }
 
-/* Subtile gradient overlay for visuell interesse */
+/* Visuelt interessant bakgrunnsbilde med gradient overlay */
 body::before {
     content: '';
     position: fixed;
@@ -66,11 +70,38 @@ body::before {
     right: 0;
     bottom: 0;
     background: 
+        /* Abstrakt gradient bakgrunn */
         linear-gradient(135deg, 
-            rgba(37, 99, 235, 0.02) 0%, 
-            rgba(255, 255, 255, 0.8) 50%, 
-            rgba(37, 99, 235, 0.02) 100%
+            #0f172a 0%, 
+            #1e293b 25%, 
+            #334155 50%, 
+            #1e293b 75%, 
+            #0f172a 100%
+        ),
+        /* Subtile pattern overlay */
+        radial-gradient(circle at 20% 80%, rgba(255, 107, 53, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(37, 99, 235, 0.1) 0%, transparent 50%),
+        /* Tekstur overlay for dybde */
+        repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 2px,
+            rgba(255, 255, 255, 0.02) 2px,
+            rgba(255, 255, 255, 0.02) 4px
         );
+    pointer-events: none;
+    z-index: -2;
+}
+
+/* Mørk overlay for bedre tekstkontrast */
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--bg-overlay); /* Mørk overlay for tekstkontrast */
     pointer-events: none;
     z-index: -1;
 }
@@ -85,10 +116,11 @@ body::before {
 }
 
 /* ========================================
-   PROFESJONELL HEADER OG NAVIGASJON
+   VISUELLT INTERESSANT HEADER OG NAVIGASJON
    ======================================== */
 .header {
-    background: var(--bg-primary); /* Hvit bakgrunn */
+    background: var(--glass-bg); /* Glassmorfisme bakgrunn */
+    backdrop-filter: blur(20px); /* Glassmorfisme effekt */
     border-bottom: 1px solid var(--border-primary); /* Subtile border */
     box-shadow: var(--shadow-primary);
     position: fixed;
@@ -187,7 +219,7 @@ body::before {
 }
 
 /* ========================================
-   PROFESJONELL HERO-SEKSJON
+   VISUELLT INTERESSANT HERO-SEKSJON
    ======================================== */
 .hero {
     position: relative;
@@ -197,11 +229,11 @@ body::before {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--bg-primary); /* Hvit bakgrunn */
+    background: var(--bg-primary); /* Mørk bakgrunn */
     overflow: hidden;
 }
 
-/* Subtile gradient overlay for visuell interesse */
+/* Visuelt interessant gradient overlay */
 .hero::before {
     content: '';
     position: absolute;
@@ -209,12 +241,17 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(
-        135deg, 
-        rgba(37, 99, 235, 0.03) 0%, 
-        rgba(255, 255, 255, 0.9) 50%, 
-        rgba(37, 99, 235, 0.03) 100%
-    ); /* Subtile gradient overlay */
+    background: 
+        /* Gradient overlay for dybde */
+        linear-gradient(
+            135deg, 
+            rgba(255, 107, 53, 0.1) 0%, 
+            rgba(37, 99, 235, 0.05) 50%, 
+            rgba(255, 107, 53, 0.1) 100%
+        ),
+        /* Subtile pattern for tekstur */
+        radial-gradient(circle at 30% 70%, rgba(255, 107, 53, 0.05) 0%, transparent 70%),
+        radial-gradient(circle at 70% 30%, rgba(37, 99, 235, 0.05) 0%, transparent 70%);
     z-index: 1;
 }
 
@@ -226,42 +263,45 @@ body::before {
     animation: fadeInUp 1s ease-out; /* Smooth entrance animation */
 }
 
-/* Hovedtittel - profesjonell og klar */
+/* Hovedtittel - visuelt interessant og klar */
 .hero-title {
     font-size: 3rem; /* Profesjonell størrelse */
     font-weight: 700;
     margin-bottom: 1.5rem;
-    color: var(--text-primary);
+    color: var(--text-primary); /* Hvit tekst for kontrast */
     font-family: 'Montserrat', sans-serif;
     letter-spacing: -0.5px; /* Tighter spacing for elegance */
     line-height: 1.2; /* Profesjonell line height */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Subtile skygge for dybde */
 }
 
-/* Undertittel - profesjonell styling */
+/* Undertittel - visuelt interessant styling */
 .hero-subtitle {
     font-size: 1.25rem; /* Profesjonell størrelse */
-    color: var(--primary-color);
+    color: var(--primary-color); /* Oransje aksentfarge */
     margin-bottom: 2rem;
     font-weight: 600;
     font-family: 'Poppins', sans-serif; /* Profesjonell font */
     letter-spacing: 0.3px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); /* Subtile skygge */
 }
 
-/* Beskrivelse - optimal lesbarhet */
+/* Beskrivelse - optimal lesbarhet på mørk bakgrunn */
 .hero-description {
     font-size: 1.1rem; /* Profesjonell størrelse */
-    color: var(--text-secondary);
+    color: var(--text-secondary); /* Lys grå for god lesbarhet */
     margin-bottom: 2.5rem;
     line-height: 1.7; /* Profesjonell line height */
     font-family: 'Roboto', sans-serif;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Subtile skygge */
 }
 
-/* CTA-knapp - profesjonell design */
+/* CTA-knapp - visuelt interessant design med oransje aksentfarge */
 .cta-button {
-    background: var(--primary-color);
+    background: var(--primary-color); /* Oransje aksentfarge */
     color: var(--text-light);
     border: 2px solid var(--primary-color);
     padding: 1rem 2rem; /* Profesjonell padding */
@@ -277,6 +317,7 @@ body::before {
     box-shadow: var(--shadow-primary);
     position: relative;
     overflow: hidden;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); /* Subtile skygge */
 }
 
 /* CTA-knapp hover effekter */
@@ -284,6 +325,7 @@ body::before {
     background: var(--primary-dark);
     transform: translateY(-2px);
     box-shadow: var(--shadow-secondary);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Større skygge på hover */
 }
 
 .cta-button:active {
@@ -321,17 +363,17 @@ section {
     position: relative;
 }
 
-/* Sofistikert seksjonstittel */
+/* Visuelt interessant seksjonstittel */
 .section-title {
     text-align: center;
     font-size: 2.75rem; /* Økt størrelse for bedre impact */
     font-weight: 700;
     margin-bottom: 4rem; /* Økt margin for bedre spacing */
-    color: var(--text-primary);
+    color: var(--text-primary); /* Hvit tekst for kontrast */
     font-family: 'Montserrat', sans-serif;
     letter-spacing: -0.5px; /* Tighter spacing */
-    text-shadow: 0 0 25px rgba(0, 188, 212, 0.3); /* Subtile glow */
-    background: linear-gradient(135deg, #ffffff 0%, #00bcd4 50%, #64b5f6 100%); /* Sofistikert gradient */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Subtile skygge for dybde */
+    background: linear-gradient(135deg, #ffffff 0%, #ff6b35 50%, #2563eb 100%); /* Visuelt interessant gradient */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -339,7 +381,7 @@ section {
     animation: fadeInUp 0.8s ease-out; /* Entrance animation */
 }
 
-/* Elegant understrekning for seksjonstitler */
+/* Visuelt interessant understrekning for seksjonstitler */
 .section-title::after {
     content: '';
     position: absolute;
@@ -354,24 +396,24 @@ section {
         var(--accent-color) 50%, 
         var(--primary-color) 80%, 
         transparent 100%
-    ); /* Gradient understrekning */
+    ); /* Gradient understrekning med oransje og blå */
     border-radius: 2px;
-    box-shadow: 0 0 15px rgba(0, 188, 212, 0.4); /* Subtile glow */
+    box-shadow: 0 0 15px rgba(255, 107, 53, 0.4); /* Oransje glow */
     animation: underlineGlow 2s ease-in-out infinite alternate; /* Glow animation */
 }
 
 /* Understrekning glow animasjon */
 @keyframes underlineGlow {
     from {
-        box-shadow: 0 0 15px rgba(0, 188, 212, 0.4);
+        box-shadow: 0 0 15px rgba(255, 107, 53, 0.4);
     }
     to {
-        box-shadow: 0 0 25px rgba(0, 188, 212, 0.6);
+        box-shadow: 0 0 25px rgba(255, 107, 53, 0.6);
     }
 }
 
 /* ========================================
-   SOFISTIKERT OM MEG SEKSJON
+   VISUELLT INTERESSANT OM OSS SEKSJON
    ======================================== */
 .about {
     background: var(--glass-bg); /* Glassmorfisme bakgrunn */
@@ -381,7 +423,7 @@ section {
     position: relative;
 }
 
-/* Subtile pattern overlay */
+/* Visuelt interessant pattern overlay */
 .about::before {
     content: '';
     position: absolute;
@@ -390,37 +432,43 @@ section {
     right: 0;
     bottom: 0;
     background: 
-        radial-gradient(circle at 20% 80%, rgba(0, 188, 212, 0.05) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(100, 181, 246, 0.05) 0%, transparent 50%);
+        radial-gradient(circle at 20% 80%, rgba(255, 107, 53, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(37, 99, 235, 0.05) 0%, transparent 50%);
     z-index: 1;
 }
 
 .about-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 4rem; /* Økt gap for bedre spacing */
-    align-items: start;
+    display: block;
     position: relative;
     z-index: 2;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-/* Om meg tekst styling */
+/* Om oss tekst styling - tilpasset mørk bakgrunn */
 .about-text p {
     font-size: 1.15rem; /* Økt størrelse for bedre lesbarhet */
-    color: var(--text-secondary);
-    margin-bottom: 1.8rem; /* Økt margin */
+    color: var(--text-secondary); /* Lys grå for god lesbarhet */
+    margin-bottom: 2.5rem; /* Økt margin for bedre spacing */
     line-height: 1.8; /* Økt line height */
     font-family: 'Roboto', sans-serif;
-    text-align: justify; /* Justified text for profesjonell look */
+    text-align: center; /* Sentrert tekst for bedre balanse */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Subtile skygge for dybde */
 }
 
-/* Ferdigheter seksjon */
+/* Siste paragraf uten margin-bottom */
+.about-text p:last-child {
+    margin-bottom: 0;
+}
+
+/* Tjenester seksjon */
 .about-skills h3 {
     font-size: 1.6rem; /* Økt størrelse */
     margin-bottom: 1.5rem; /* Økt margin */
-    color: var(--text-primary);
+    color: var(--text-primary); /* Hvit tekst for kontrast */
     font-family: 'Montserrat', sans-serif;
-    text-shadow: 0 0 15px rgba(0, 188, 212, 0.3); /* Subtile glow */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Subtile skygge for dybde */
     letter-spacing: -0.3px;
 }
 
@@ -431,13 +479,13 @@ section {
     gap: 0.75rem; /* Økt gap for bedre spacing */
 }
 
-/* Ferdigheter tags - sofistikert design */
+/* Tjenester tags - visuelt interessant design */
 .skill-tag {
     background: linear-gradient(135deg, 
-        rgba(0, 188, 212, 0.2) 0%, 
-        rgba(100, 181, 246, 0.2) 100%
-    ); /* Subtile gradient bakgrunn */
-    color: var(--primary-color);
+        rgba(255, 107, 53, 0.2) 0%, 
+        rgba(37, 99, 235, 0.2) 100%
+    ); /* Visuelt interessant gradient bakgrunn */
+    color: var(--primary-color); /* Oransje tekst */
     padding: 0.6rem 1.2rem; /* Økt padding */
     border-radius: 8px; /* Mindre radius for sofistikert look */
     font-size: 0.9rem;
@@ -449,15 +497,16 @@ section {
     backdrop-filter: blur(10px); /* Glassmorfisme effekt */
     position: relative;
     overflow: hidden;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Subtile skygge */
 }
 
-/* Hover effekter for ferdigheter */
+/* Hover effekter for tjenester */
 .skill-tag:hover {
     transform: translateY(-2px) scale(1.02);
     box-shadow: var(--shadow-secondary);
     background: linear-gradient(135deg, 
-        rgba(0, 188, 212, 0.3) 0%, 
-        rgba(100, 181, 246, 0.3) 100%
+        rgba(255, 107, 53, 0.3) 0%, 
+        rgba(37, 99, 235, 0.3) 100%
     );
     border-color: var(--primary-light);
 }
@@ -482,7 +531,7 @@ section {
 }
 
 /* ========================================
-   SOFISTIKERT PROSJEKTER SEKSJON
+   VISUELLT INTERESSANT TJENESTER SEKSJON
    ======================================== */
 .projects {
     position: relative;
@@ -492,7 +541,7 @@ section {
     border-bottom: 1px solid var(--border-primary);
 }
 
-/* Sofistikert overlay for prosjekt seksjonen */
+/* Visuelt interessant overlay for tjenester seksjonen */
 .projects::before {
     content: '';
     position: absolute;
@@ -500,12 +549,17 @@ section {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(
-        135deg, 
-        rgba(13, 17, 23, 0.7) 0%, 
-        rgba(22, 27, 34, 0.5) 50%, 
-        rgba(13, 17, 23, 0.8) 100%
-    ); /* Gradient overlay for dybde */
+    background: 
+        /* Gradient overlay for dybde */
+        linear-gradient(
+            135deg, 
+            rgba(15, 23, 42, 0.7) 0%, 
+            rgba(30, 41, 59, 0.5) 50%, 
+            rgba(15, 23, 42, 0.8) 100%
+        ),
+        /* Subtile pattern overlay */
+        radial-gradient(circle at 30% 70%, rgba(255, 107, 53, 0.03) 0%, transparent 70%),
+        radial-gradient(circle at 70% 30%, rgba(37, 99, 235, 0.03) 0%, transparent 70%);
     z-index: 1;
 }
 
@@ -519,7 +573,7 @@ section {
     z-index: 2;
 }
 
-/* Sofistikert prosjekt kort */
+/* Visuelt interessant tjeneste kort */
 .project-card {
     background: var(--glass-bg); /* Glassmorfisme bakgrunn */
     border: 1px solid var(--border-primary);
@@ -538,14 +592,14 @@ section {
     border-color: var(--primary-light);
 }
 
-/* Prosjekt bilde seksjon */
+/* Tjeneste bilde seksjon */
 .project-image {
     height: 220px; /* Økt høyde */
     background: linear-gradient(135deg, 
-        rgba(0, 188, 212, 0.1) 0%, 
-        rgba(100, 181, 246, 0.1) 50%,
-        rgba(0, 188, 212, 0.05) 100%
-    ); /* Sofistikert gradient */
+        rgba(255, 107, 53, 0.1) 0%, 
+        rgba(37, 99, 235, 0.1) 50%,
+        rgba(255, 107, 53, 0.05) 100%
+    ); /* Visuelt interessant gradient */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -554,17 +608,17 @@ section {
     overflow: hidden;
 }
 
-/* Prosjekt ikoner - sofistikert styling */
+/* Tjeneste ikoner - visuelt interessant styling */
 .project-placeholder {
     font-size: 4.5rem; /* Økt størrelse */
     opacity: 0.9;
-    filter: drop-shadow(0 0 15px rgba(0, 188, 212, 0.4)); /* Subtile glow */
+    filter: drop-shadow(0 0 15px rgba(255, 107, 53, 0.4)); /* Oransje glow */
     transition: all 0.3s ease;
 }
 
 .project-card:hover .project-placeholder {
     transform: scale(1.1);
-    filter: drop-shadow(0 0 20px rgba(0, 188, 212, 0.6));
+    filter: drop-shadow(0 0 20px rgba(255, 107, 53, 0.6));
 }
 
 /* Prosjekt innhold */
@@ -572,24 +626,25 @@ section {
     padding: 2rem; /* Økt padding */
 }
 
-/* Prosjekt tittel */
+/* Tjeneste tittel */
 .project-title {
     font-size: 1.4rem; /* Økt størrelse */
     font-weight: 600;
     margin-bottom: 0.8rem; /* Økt margin */
-    color: var(--text-primary);
+    color: var(--text-primary); /* Hvit tekst for kontrast */
     font-family: 'Montserrat', sans-serif;
-    text-shadow: 0 0 8px rgba(0, 188, 212, 0.2); /* Subtile glow */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Subtile skygge for dybde */
     letter-spacing: -0.3px;
 }
 
-/* Prosjekt beskrivelse */
+/* Tjeneste beskrivelse */
 .project-description {
-    color: var(--text-secondary);
+    color: var(--text-secondary); /* Lys grå for god lesbarhet */
     margin-bottom: 1.5rem; /* Økt margin */
     line-height: 1.7; /* Økt line height */
     font-family: 'Roboto', sans-serif;
     font-size: 0.95rem; /* Slightly smaller for elegance */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Subtile skygge */
 }
 
 /* Teknologi tags */
@@ -600,13 +655,13 @@ section {
     margin-bottom: 1.5rem; /* Økt margin */
 }
 
-/* Teknologi tag styling */
+/* Teknologi tag styling - visuelt interessant */
 .tech-tag {
     background: linear-gradient(135deg, 
-        rgba(0, 188, 212, 0.15) 0%, 
-        rgba(100, 181, 246, 0.15) 100%
-    ); /* Subtile gradient */
-    color: var(--primary-color);
+        rgba(255, 107, 53, 0.15) 0%, 
+        rgba(37, 99, 235, 0.15) 100%
+    ); /* Visuelt interessant gradient */
+    color: var(--primary-color); /* Oransje tekst */
     padding: 0.4rem 0.9rem; /* Økt padding */
     border-radius: 6px; /* Mindre radius */
     font-size: 0.8rem;
@@ -615,20 +670,21 @@ section {
     border: 1px solid var(--border-secondary);
     transition: all 0.3s ease;
     backdrop-filter: blur(5px);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Subtile skygge */
 }
 
 .tech-tag:hover {
     background: linear-gradient(135deg, 
-        rgba(0, 188, 212, 0.25) 0%, 
-        rgba(100, 181, 246, 0.25) 100%
+        rgba(255, 107, 53, 0.25) 0%, 
+        rgba(37, 99, 235, 0.25) 100%
     );
     transform: translateY(-1px);
     border-color: var(--primary-color);
 }
 
-/* Prosjekt lenke */
+/* Tjeneste lenke */
 .project-link {
-    color: var(--primary-color);
+    color: var(--primary-color); /* Oransje farge */
     text-decoration: none;
     font-weight: 600;
     font-family: 'Roboto', sans-serif;
@@ -638,11 +694,12 @@ section {
     font-size: 0.9rem;
     position: relative;
     display: inline-block;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Subtile skygge */
 }
 
 .project-link:hover {
-    color: var(--accent-color);
-    text-shadow: 0 0 8px rgba(100, 181, 246, 0.6);
+    color: var(--accent-color); /* Blå farge på hover */
+    text-shadow: 0 0 8px rgba(37, 99, 235, 0.6);
     transform: translateX(5px); /* Subtile slide effekt */
 }
 
@@ -663,21 +720,21 @@ section {
 }
 
 /* ========================================
-   SOFISTIKERT FOOTER
+   VISUELLT INTERESSANT FOOTER
    ======================================== */
 .footer {
     background: linear-gradient(135deg, 
         var(--bg-primary) 0%, 
         var(--bg-secondary) 50%, 
         var(--bg-primary) 100%
-    ); /* Sofistikert gradient bakgrunn */
-    color: var(--text-primary);
+    ); /* Visuelt interessant gradient bakgrunn */
+    color: var(--text-primary); /* Hvit tekst for kontrast */
     padding: 4rem 0 2rem; /* Økt padding */
     border-top: 1px solid var(--border-primary);
     position: relative;
 }
 
-/* Sofistikert pattern overlay på footer */
+/* Visuelt interessant pattern overlay på footer */
 .footer::before {
     content: '';
     position: absolute;
@@ -686,8 +743,8 @@ section {
     right: 0;
     bottom: 0;
     background: 
-        radial-gradient(circle at 20% 50%, rgba(0, 188, 212, 0.08) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(100, 181, 246, 0.08) 0%, transparent 50%);
+        radial-gradient(circle at 20% 50%, rgba(255, 107, 53, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(37, 99, 235, 0.08) 0%, transparent 50%);
     z-index: 1;
 }
 
@@ -704,34 +761,36 @@ section {
 .footer-section h3 {
     font-size: 1.4rem; /* Økt størrelse */
     margin-bottom: 1.5rem; /* Økt margin */
-    color: var(--text-primary);
+    color: var(--text-primary); /* Hvit tekst for kontrast */
     font-family: 'Montserrat', sans-serif;
-    text-shadow: 0 0 15px rgba(0, 188, 212, 0.3); /* Subtile glow */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Subtile skygge for dybde */
     letter-spacing: -0.3px;
 }
 
 /* Kontakt informasjon */
 .contact-info p {
     margin-bottom: 0.8rem; /* Økt margin */
-    color: var(--text-secondary);
+    color: var(--text-secondary); /* Lys grå for god lesbarhet */
     font-family: 'Roboto', sans-serif;
     transition: all 0.3s ease;
     font-size: 1rem; /* Økt størrelse */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Subtile skygge */
 }
 
 .contact-info p:hover {
-    color: var(--primary-color);
-    text-shadow: 0 0 8px rgba(0, 188, 212, 0.5);
+    color: var(--primary-color); /* Oransje farge på hover */
+    text-shadow: 0 0 8px rgba(255, 107, 53, 0.5);
     transform: translateX(5px); /* Subtile slide effekt */
 }
 
-/* Sosiale lenker */
+/* Sosiale lenker - åpnes i ny fane for bedre brukeropplevelse */
 .social-links {
     display: flex;
     flex-direction: column;
     gap: 0.8rem; /* Økt gap */
 }
 
+/* Sosiale lenker styling - eksterne lenker med target="_blank" */
 .social-link {
     color: var(--text-secondary);
     text-decoration: none;
@@ -747,8 +806,8 @@ section {
 }
 
 .social-link:hover {
-    color: var(--primary-color);
-    text-shadow: 0 0 8px rgba(0, 188, 212, 0.6);
+    color: var(--primary-color); /* Oransje farge på hover */
+    text-shadow: 0 0 8px rgba(255, 107, 53, 0.6);
     background: var(--glass-bg);
     transform: translateX(10px); /* Slide effekt */
     border: 1px solid var(--border-primary);
@@ -762,7 +821,7 @@ section {
     left: 0;
     width: 0;
     height: 2px;
-    background: var(--primary-color);
+    background: var(--primary-color); /* Oransje understrekning */
     transform: translateY(-50%);
     transition: width 0.3s ease;
 }
@@ -776,11 +835,12 @@ section {
     border-top: 1px solid var(--border-primary);
     padding-top: 1.5rem; /* Økt padding */
     text-align: center;
-    color: var(--text-muted);
+    color: var(--text-muted); /* Medium grå for mindre viktig tekst */
     font-family: 'Roboto', sans-serif;
     position: relative;
     z-index: 2;
     font-size: 0.9rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Subtile skygge */
 }
 
 /* ========================================
@@ -829,10 +889,10 @@ section {
         font-size: 1rem;
     }
     
-    /* Om meg layout for mobil */
+    /* Om oss layout for mobil - allerede responsiv */
     .about-content {
-        grid-template-columns: 1fr;
-        gap: 2.5rem; /* Økt gap */
+        max-width: 100%;
+        padding: 0 1rem;
     }
     
     /* Prosjekt grid for mobil */

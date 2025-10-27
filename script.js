@@ -1,8 +1,8 @@
 // ========================================
-// NORDICDIGITAL STUDIO - PROFESJONELL WEBSIDE
+// NORDICDIGITAL STUDIO - VISUELLT INTERESSANT WEBSIDE
 // ========================================
-// Moderne JavaScript funksjonalitet for profesjonell bedriftsnettside
-// Oppdatert for NordicDigital Studio med fokus på kundeopplevelse
+// Moderne JavaScript funksjonalitet for visuelt interessant bedriftsnettside
+// Oppdatert for NordicDigital Studio med mørk bakgrunn og oransje aksentfarger
 
 // Vent til DOM er lastet før vi kjører koden
 document.addEventListener('DOMContentLoaded', function() {
@@ -88,26 +88,30 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(card);
     });
     
-    // Header bakgrunn endring ved scrolling
+    // Header bakgrunn endring ved scrolling - tilpasset mørk bakgrunn
     const header = document.querySelector('.header');
     window.addEventListener('scroll', function() {
         if (window.scrollY > 100) {
-            header.style.background = 'rgba(255, 255, 255, 0.95)';
-            header.style.backdropFilter = 'blur(10px)';
+            header.style.background = 'rgba(15, 23, 42, 0.95)'; // Mørk marine blå med høy opasitet
+            header.style.backdropFilter = 'blur(20px)';
         } else {
-            header.style.background = 'white';
-            header.style.backdropFilter = 'none';
+            header.style.background = 'rgba(15, 23, 42, 0.1)'; // Glassmorfisme bakgrunn
+            header.style.backdropFilter = 'blur(20px)';
         }
     });
     
-    // Prosjekt kort hover effekter
+    // Tjeneste kort hover effekter - tilpasset visuelt interessant design
     projectCards.forEach(card => {
         card.addEventListener('mouseenter', function() {
             this.style.transform = 'translateY(-10px) scale(1.02)';
+            // Legg til subtile glow effekt på hover
+            this.style.boxShadow = '0 20px 25px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 107, 53, 0.1)';
         });
         
         card.addEventListener('mouseleave', function() {
             this.style.transform = 'translateY(0) scale(1)';
+            // Tilbakestill box-shadow
+            this.style.boxShadow = '';
         });
     });
     
@@ -177,9 +181,10 @@ document.addEventListener('DOMContentLoaded', function() {
     
     images.forEach(img => imageObserver.observe(img));
     
-    // Konsoll melding for utviklere
-    console.log('🚀 NordicDigital Studio - Profesjonell Webside er lastet!');
-    console.log('💡 Tips: Websiden er oppdatert med profesjonelt design og bedriftsfokus');
+    // Konsoll melding for utviklere - oppdatert for visuelt interessant design
+    console.log('🚀 NordicDigital Studio - Visuelt Interessant Webside er lastet!');
+    console.log('💡 Tips: Websiden har mørk bakgrunn med oransje aksentfarger og glassmorfisme effekter');
+    console.log('🎨 Design: Mørk marine blå bakgrunn med subtile gradienter og tekstur');
     console.log('📍 Lokasjon: Ås, Norge | 👨‍💻 Kim Andre Iversen | 📧 Kimatcode@gmail.com');
     
 });
